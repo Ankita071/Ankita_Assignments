@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="addressUsingConstructorInjection"
+		class="assignment1.Assignment1.Address">
+		<constructor-arg value="xyz"></constructor-arg>
+		<constructor-arg value="Bangalore"></constructor-arg>
+		<constructor-arg value="Karnataka"></constructor-arg>
+		<constructor-arg value="123456"></constructor-arg>
+		<constructor-arg value="India"></constructor-arg>
+	</bean>
+	<bean id="customerUsingConstructorInjection"
+		class="assignment1.Assignment1.Customer">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="Abc"></constructor-arg>
+		<constructor-arg value="1234567890"></constructor-arg>
+		<constructor-arg
+			ref="addressUsingConstructorInjection"></constructor-arg>
+	</bean>
+	<bean id="addressUsingSetterInjection"
+		class="assignment1.Assignment1.Address">
+		<property name="street" value="xyz"></property>
+		<property name="city" value="Bangalore"></property>
+		<property name="state" value="Karnataka"></property>
+		<property name="zip" value="123456"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	<bean id="customerUsingSetterInjection"
+		class="assignment1.Assignment1.Customer">
+		<property name="customerId" value="101"></property>
+		<property name="customerName" value="Abc"></property>
+		<property name="customerContact" value="1234567890"></property>
+		<property name="address" ref="addressUsingSetterInjection"></property>
+	</bean>
+</beans>
