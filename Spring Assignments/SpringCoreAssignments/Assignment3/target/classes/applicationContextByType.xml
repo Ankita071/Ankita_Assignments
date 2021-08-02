@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan
+		base-package="assignment3.Test"></context:component-scan>
+
+	<bean id="bankAccount" class="assignment3.Test.BankAccount">
+		<property name="accountId" value="23456" />
+		<property name="accountHolderName" value="Ankita" />
+		<property name="accountType" value="Saving Account" />
+		<property name="accountBalance" value="10000" />
+	</bean>
+
+
+	<bean id="bankAccountRepositoryImpl"
+		class="assignment3.Test.BankAccountRepositoryImpl">
+		<property name="initialBalance" value="10000" />
+	</bean>
+
+
+	<bean id="bankAccountServiceImpl"
+		class="assignment3.Test.BankAccountServiceImpl">
+		<property name="withdrawAmount" value="4000" />
+		<property name="depositAmount" value="3000" />
+		<property name="initialBalance" value="10000" />
+	</bean>
+
+	<bean id="bankAccountController"
+		class="assignment3.Test.BankAccountController" autowire="byType">
+		<property name="withdrawAmount" value="4000.0" />
+		<property name="depositAmount" value="3000.0" />
+		<property name="initialBalance" value="10000" />
+	</bean>
+</beans>

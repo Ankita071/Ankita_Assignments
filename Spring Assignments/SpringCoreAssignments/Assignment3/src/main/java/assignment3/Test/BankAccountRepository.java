@@ -1,0 +1,6 @@
+package assignment3.Test;
+
+public interface BankAccountRepository {
+	public double getBalance(long accountId);
+	public double updateBalance(long accountId, double newBalance);
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config />
+	<context:component-scan
+		base-package="assignment5.Test"></context:component-scan>
+
+	<bean id="student" class="assignment5.Test.Student">
+		<property name="studentId" value="101"></property>
+		<property name="studentName" value="Abc"></property>
+		<property name="studentAge" value="17"></property>
+	</bean>
+
+	<bean class="assignment5.Test.StudentCourse" id="studentCourse">
+		<property name="course" value="Science"></property>
+	</bean>
+
+	<bean class="assignment5.Test.StudentMarks" id="studentMarks">
+		<property name="marks1" value="98"></property>
+		<property name="marks2" value="90"></property>
+		<property name="marks3" value="91"></property>
+	</bean>
+
+</beans>

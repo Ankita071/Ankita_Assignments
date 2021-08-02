@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="questionList" class="Assignment2.Test.QuestionList">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg
+			value="What are some of the features of Spring Core?"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Pre-defined Templates</value>
+				<value>Loose Coupling</value>
+				<value>Easy to test</value>
+				<value>Lightweight Framework</value>
+				<value>Dependency Injection</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="questionSet" class="Assignment2.Test.QuestionSet">
+		<constructor-arg value="102"></constructor-arg>
+		<constructor-arg
+			value="What do M, V, C stands for in Spring MVC?"></constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>M stands for Model</value>
+				<value>V stands for View</value>
+				<value>C stands for Controller</value>
+			</set>
+		</constructor-arg>
+	</bean>
+	<bean id="questionMap" class="Assignment2.Test.QuestionMap">
+		<constructor-arg value="103"></constructor-arg>
+		<constructor-arg
+			value="What are the various modules of Spring?"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key = "1" value = "Spring Core"></entry>
+				<entry key = "2" value = "Spring MVC"></entry>
+				<entry key = "3" value = "Spring REST"></entry>
+				<entry key = "4" value = "Spring AOP"></entry>
+				<entry key = "5" value = "Spring Boot"></entry>
+				<entry key = "6" value = "Spring JDBC"></entry>
+				<entry key = "7" value = "Spring Security"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>
