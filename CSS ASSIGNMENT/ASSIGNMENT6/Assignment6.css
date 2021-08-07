@@ -1,0 +1,8 @@
+table, tr, td {
+   border: 2px solid green;
+}
+
+.first {
+   background-color: green;
+   color: white;
+}

@@ -1,0 +1,8 @@
+table, tr, td{
+   border: 2px solid black;
+   border-collapse: collapse;
+}
+
+.one{
+   font-weight: bold;
+}

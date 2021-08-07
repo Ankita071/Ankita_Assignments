@@ -1,0 +1,15 @@
+body{
+   background-color: #E0FFFF;
+}
+
+.first{
+   text-transform: uppercase;
+}
+
+.second {
+   text-transform: inherit;
+}
+
+.third {
+   text-transform: initial;
+}

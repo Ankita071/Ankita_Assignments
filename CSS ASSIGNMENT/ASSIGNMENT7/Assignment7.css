@@ -1,0 +1,11 @@
+.note{
+   font-weight: bold;
+}
+
+.para {
+   font-size: 22px;
+   width: 600px;
+   border: 2px solid red;
+   border-spacing: 10px;
+   outline: 4px dotted lightgreen;
+}
