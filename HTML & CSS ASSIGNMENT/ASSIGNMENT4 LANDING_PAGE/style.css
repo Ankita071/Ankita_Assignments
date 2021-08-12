@@ -1,0 +1,369 @@
+/*Making website responsive*/
+@media only screen and (max-width: 400px) {
+   /* Home Section */
+  #home {
+    box-sizing: border-box;
+    /* background-color: black; */
+    height: 1800px;
+    width: 40vw;
+    color: white;
+    margin: 5px auto;
+    padding: 20px 40px;
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 4px 1px black; */
+  }
+  }
+  
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #heading {
+    background-color: pink;
+  }
+  /* Background */
+  #heading::before {
+    background-color: pink;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  
+  /* Header Section */
+  #header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #e3909f;
+  }
+  
+  /* Logo */
+  #img {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #db5656;
+    background-color: black;
+    margin: 30px 30px;
+    padding: 7px;
+    box-shadow: 0px 0px 3px 2px black;
+  }
+  
+  /* Logo's Image Section */
+  #header-img {
+    filter: invert();
+    width: 60px;
+    height: 70px;
+    display: block;
+    margin: auto;
+  }
+  
+  /* Logo's text Section */
+  #para {
+    color: crimson;
+    font-size: 0.9rem;
+    text-align: center;
+    text-shadow: 0 0 5px crimson;
+    font-family: 'Lobster', cursive;
+  }
+  
+  /* Navbar */
+  /* #nav {
+  } */
+  
+  /* Navigation Section */
+  #nav-bar {
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 30px;
+    margin: 28px auto;
+    padding: 15px 30px;
+    top: 20px;
+    left: 352px;
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px 1px black;
+    border: 2px solid red;
+  }
+  
+  /* Navigation Bar Section */
+  .menu {
+    display: flex;
+  }
+  
+  /* Modifying menu in Navigation Bar */
+  .menu li {
+    list-style: none;
+    margin: 0px auto;
+    padding: 5px 40px;
+  }
+  
+  /* Modifying link of menu in Navigation Bar */
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: white;  
+    font-family: 'Merriweather', serif;
+  }
+  
+  .nav-link:hover {
+    text-decoration: none;
+    font-size: 2rem;
+    color: crimson;
+    font-weight: bold;
+    transition: font-size 0.5s;
+  }
+  
+  /* Body of the website */
+  #main {
+    background-color: pink;
+  }
+  
+  /* Home Section */
+  #home {
+    box-sizing: border-box;
+    /* background-color: black; */
+    height: 400px;
+    width: 72vw;
+    color: white;
+    margin: 5px auto;
+    padding: 20px 40px;
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 4px 1px black; */
+  }
+  
+  /* Content of Home Section */
+  #home .features {
+    background-color: rgb(30, 30, 30);
+    margin: 13px auto;
+    padding: 20px 20px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 1px black;
+  }
+  
+  /* Heading of Home Section */
+  .features h3 {
+    color: crimson;
+    font-size: 1.6rem;
+  }
+  
+  /* Paragraph of Home Section */
+  .features p {
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  /* Heading of all the sections */
+  .text {
+    text-align: center;
+    font-size: 1.6rem;
+    color: red;
+    padding: 9px 9px;
+    margin: 20px auto;
+  }
+  
+  /* Product Section with heading: Our Products */
+  #product {
+    /* border: 2px solid black; */
+    padding: 5px 5px;
+  }
+  
+  /* Products Section */
+  #container {
+    /* border: 2px solid black; */
+    /* background-color: black; */
+    color: white;
+    margin: 6px auto;
+    width: 1400px;
+    height: 850px;
+    /* border-radius: 20px; */
+    padding: 10px 30px;
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 40px 20px;
+  }
+  
+  /*Styling the boxes of Product Section*/
+  .item {
+    background-color: rgb(30, 30, 30);
+    border-radius: 25px;
+    border: 4px solid grey;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  /* Styling all the elements of Products Section */
+  .button {
+    margin: 5px auto;
+    padding: 10px 20px;
+  }
+  
+  .button h3{
+    color: crimson;
+    font-size: 1.6rem;
+  }
+  
+  .button img {
+    width: 180px;
+    height: 120px;
+  }
+  
+  .button  p {
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  /* Tips Section */
+  #tutorial {
+    /* border: 2px solid black; */
+    padding: 5px 5px;
+  }
+  
+  /* Styling the Video Section */
+  #video {
+    display: flex;
+    margin: 7px auto;
+    padding: 10px 10px;
+  }
+  
+  /* Contact Us Section */
+  #talk {
+    border: 4px solid grey;
+    background-color: #302f2f;
+    color: white;
+    width: 900px;
+    margin: 15px auto;
+    padding: 30px 30px;
+    border-radius: 20px;
+  }
+  
+  /* Styling the Form Section */
+  .align {
+    width: 700px;
+    margin: 15px auto;
+    padding: 10px 10px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  /* Styling the label tags of Form Section */
+  .label {
+    padding: 15px 30px;
+    color: crimson;
+    font-size: 1.7rem;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+  }
+  
+  /* Styling the input tags of Form Section */
+  #name {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: crimson;
+  }
+  
+  #email {
+    padding: 10px 15px;
+    color: crimson;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: white;
+  }
+  
+
+  input::placeholder,
+  textarea::placeholder {
+    color: crimson;
+  }
+  
+  input:focus,
+  textarea:focus {
+    background-color: black;
+    color: white;
+  }
+  
+  #comments {
+    padding: 10px 15px;
+    color: crimson;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: crimson;
+  }
+  
+  .submit {
+    padding: 10px 15px;
+    /* color: crimson; */
+    font-size: 1.6rem;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 30px;
+    color: white;
+    background-color: crimson;
+    border: 2px solid white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .submit:hover {
+    padding: 12px 16px;
+    /* color: crimson; */
+    font-size: 1.8rem;
+    display: block;
+    width: 250px;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    border: 2px solid crimson;
+    transition: all 1s;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Footer Section */
+  #footer {
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+  }
+  

@@ -1,0 +1,265 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: yellow; */
+  /* background-image: url("restaurant.jpg"); */
+}
+
+#main::before {
+  /*   background: url("https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg") no-repeat center center/cover; */
+  background-image: url("restaurant.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  opacity: 0.3;
+  /* background-color: yellow; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 479vh;
+  z-index: -1;
+  /* opacity: 1; */
+}
+
+#heading {
+  border: 2px solid blue;
+  background-color: dodgerblue;
+  background: linear-gradient(145deg, rgb(102, 102, 184), rgb(83, 166, 248));
+  color: yellow;
+  width: 630px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 40px;
+  opacity: 0.9;
+  animation: divAnimation 2s ease-in-out 0s 1 forwards;
+}
+
+@keyframes divAnimation {
+  0% {
+    width: 500px;
+    color: #f54291;
+    border-radius: 10px;
+  }
+  50% {
+    width: 600px;
+    color: pink;
+    border-radius: 20px;
+  }
+  100% {
+    width: 630px;
+  }
+}
+
+#title {
+  font-size: 2.5rem;
+  font-family: "Roboto Slab", serif;
+}
+
+#description {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+  font-family: "Dancing Script", cursive;
+}
+
+#content {
+  border: 2px solid blue;
+  width: 1000px;
+  margin: 50px auto;
+  border-radius: 40px;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(145deg, rgb(102, 102, 184), rgb(83, 166, 248));
+  opacity: 0.8;
+  color: black;
+  visibility: hidden;
+  animation: bodyAnimation 2s ease-in-out 2s 1 forwards;
+}
+
+@keyframes bodyAnimation {
+  0% {
+    border-radius: 5px;
+    width: 900px;
+    visibility: visible;
+    position: absolute;
+    left: 100px;
+    margin: 10px 0px;
+  }
+
+  50% {
+    border-radius: 20px;
+    /* width: 950px; */
+    visibility: visible;
+    position: absolute;
+    left: 225px;
+  }
+
+  100% {
+    border-radius: 40px;
+    width: 1000px;
+    visibility: visible;
+  }
+}
+
+.form {
+  padding: 15px;
+  font-size: 24px;
+  width: 700px;
+  margin: 14px auto;
+  background-color: rgb(73, 73, 143);
+  border-radius: 20px;
+  color: #f54291;
+  visibility: hidden;
+  animation: elements 2s ease-in 5s 1 forwards;
+}
+
+@keyframes elements {
+  0% {
+    visibility: visible;
+    width: 650px;
+  }
+  50% {
+    visibility: visible;
+    width: 680px;
+  }
+  100% {
+    visibility: visible;
+    width: 700px;
+  }
+}
+
+.form:nth-child(-n + 4) {
+  display: flex;
+}
+
+.info {
+  width: 300px;
+  font-size: 28px;
+  color: rgb(255, 255, 0);
+  /* font-family: "Merriweather", serif; */
+  /* text-shadow: 0px 0px yellow; */
+  font-weight: 600;
+}
+
+.align {
+  padding: 6px;
+  width: 350px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+
+.align::placeholder {
+  color: darkblue;
+}
+
+#dropdown {
+  padding: 5px;
+  width: 365px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+
+.food {
+  width: 600px;
+  margin: 8px 50px;
+  padding: 0px 20px;
+  text-align: left;
+  /* font-size: 1.6rem; */
+  color: yellow;
+  float: left;
+  /* font-family: "Merriweather", serif; */
+  overflow: hiddden;
+  font-size: 28px;
+  /* font-family: "Merriweather", serif; */
+  /* text-shadow: 0px 0px yellow; */
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  text-align: left;
+  width: 30px;
+  font-size: 1.3rem;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  text-align: left;
+  width: 40px;
+  font-size: 1.5rem;
+  color: darkblue;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  width: 20px;
+  color: darkblue;
+}
+
+input[type="checkbox"] {
+  text-align: left;
+  width: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.radio {
+  text-align: left;
+  width: 200px;
+  margin: 8px auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(0, 255, 0);
+}
+
+.radio:checked {
+  color: yellow;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  content: "";
+  font-size: 1.5rem;
+  background-color: darkblue;
+  color: white;
+}
+
+#comment {
+  margin: 10px auto;
+  padding: 30px;
+  width: 550px;
+  height: 100px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+textarea::placeholder {
+  color: darkblue;
+}
+
+#submit {
+  padding: 15px;
+  width: 150px;
+  font-size: 1.5rem;
+  background-color: yellow;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 30px;
+  margin: auto;
+}
+
+#submit:hover {
+  padding: 15px;
+  width: 200px;
+  font-size: 1.6rem;
+  background-color: #c4c21b;
+  color: darkblue;
+  border: 2px solid blue;
+  border-radius: 30px;
+  margin: 0px auto;
+  cursor: pointer;
+}

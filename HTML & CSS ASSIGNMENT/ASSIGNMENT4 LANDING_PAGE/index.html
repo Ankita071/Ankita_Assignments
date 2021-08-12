@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@700&family=Merriweather&family=Noto+Serif:wght@700&family=Nunito+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div id="heading">
+  <header id="header">
+    <div id="img">
+      <img src="img/logo.png" alt="Logo" id="header-img">
+      <p id="para">My Cosmetic Store</p>
+    </div>
+    <div id="nav">
+      <nav id="nav-bar">
+        <ul class="menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#product">Products</a></li>
+          <!-- <li><a class="nav-link" href="#tips">Tips</a></li> -->
+          <li><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Main content-->
+  <main id="main">
+    
+    <!--Home Section-->
+    <div id="home">
+      <div class="features">
+        <h3>100% Natural</h3>
+        <p>We use 100% natural herbal things for making our cosmetic products.</p>
+      </div>
+
+      <div class="features">
+        <h3>Fast Shipping</h3>
+        <p>We make sure you recieve your order as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+
+      <div class="features">
+        <h3>Special Offers & Deals</h3>
+        <p>We provide various deals & offers on our products. Do check them out!</p>
+      </div>
+    </div>
+
+    <!--Product Section-->
+    <div id="product">
+      <div class="text">
+        <h2>Our Products</h2>
+      </div>
+
+      <div id="container">
+        <div class="item">
+          <div class="button">
+             <h3>Abc Moisturizer</h3>
+          </div>
+          <div class="button">
+             <img src="img/moisturiser.jfif" alt="Abc Moisturizer">
+          </div>
+          <div class="button">
+             <p>Price: Rs.200/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="button">
+             <h3>Abc Face Powder</h3>
+          </div>
+          <div class="button">
+             <img src="img/face_powder.jfif" alt="Abc Face Powder">
+          </div>
+          <div class="button">
+             <p>Price: Rs.180/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="button">
+             <h3>Abc Lipstick</h3>
+          </div>
+          <div class="button">
+             <img src="img/lipstick.png" alt="Abc Lipstick">
+          </div>
+          <div class="button">
+             <p>Price: Rs.380/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="button">
+             <h3>Abc Mascara</h3>
+          </div>
+          <div class="button">
+             <img src="img/mascara.png" alt="Abc Mascara">
+          </div>
+          <div class="button">
+             <p>Price: Rs.210/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+                
+        <div class="item">
+          <div class="button">
+             <h3>Abc Perfume</h3>
+          </div>
+          <div class="button">
+             <img src="img/perfume.jfif" alt="Abc Perfume">
+          </div>
+          <div class="button">
+             <p>Price: Rs.280/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="button">
+             <h3>Abc Nail Paint</h3>
+          </div>
+          <div class="button">
+             <img src="img/nailPaint.jfif" alt="Abc Nail Paint">
+          </div>
+          <div class="button">
+             <p>Price: Rs.190/-</p>
+          </div>
+          <div class="button">
+            <a href="#product" class="submit">Order Now</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!--Contact Us Section-->
+    <div id="contact">
+      <div class="text">
+        <h2>Contact Us</h2>
+      </div>
+      
+      <div id="talk">
+        <form id="form" action="#contact">
+          <div class="align">
+            <label for="name" class="label">Name: </label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+          </div>
+           
+          <div class="align">
+            <label for="email" class="label">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="align">
+            <label for="comments" class="comment label">Queries: </label>
+            <textarea id="comments" rows="7" cols="30" placeholder="Any comments, suggestions or queries..." required></textarea>
+          </div>
+          
+          <div class="alignment">
+            <input type="submit" value="Submit" id="submit" class="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </main>
+  
+  <!--Footer Section-->
+  <footer id="footer">&copy; 2021 copyright: My Cosmetic Store, All Rights Reserved | Designed By Ankita</footer>
+</div>
+</body>
+</html>

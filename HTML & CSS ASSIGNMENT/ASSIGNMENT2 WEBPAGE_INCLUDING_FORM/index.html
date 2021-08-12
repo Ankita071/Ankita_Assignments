@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <title>Assignment2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<div id="main">
+  <div id="heading">
+    <h1 id="title">Abc Restaurant Survey Form</h1>
+    <p id="description">Thank you for taking out your valuable time to rate our restaurant!</p>
+  </div>
+  
+  <div id = "content">
+    <form action="#" id="survey-form" method="POST">
+      <div class="form">
+        <label for="name" class="info" id="name-label">Name: </label>
+        <input id="name" type="text" name="fullname" placeholder="Enter your Name" required class="align">
+      </div>
+      
+      <div class="form">
+        <label for="number" class="info" id="number-label">Age: </label>
+        <input id="number" type="number" name="age" min="1" max="99" maxlength="2" placeholder="Age" required class="align">
+      </div>
+      
+      <div class="form">
+        <label for="email" class="info" id="email-label">Email: </label>
+        <input id="email" type="email" name="email" placeholder="abc@gmail.com" required class="align">
+      </div>
+      
+      <div class="form">
+        <label for="dropdown" class="info">Favourite Cuisine: </label>
+        <select id="dropdown" name="Favorite Cuisine" required >
+          <option value="Indian">Indian</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Italian">Italian</option>
+          <option value="Mexican">Mexican</option>
+          <option value="Japanese">Japanese</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Thai">Thai</option>
+          <option value="Caribbean">Caribbean</option>
+        </select>
+      </div>
+      
+      <div class="form">
+        <label class="food">Order Type: </label>  
+        <div class="radio">
+          <input id="dinein" type="radio" name="ordertype" value="Dine In" required>
+          <label for="dinein">Dine In</label>
+        </div>
+        
+        <div class="radio">
+          <input id="takeout" type="radio" name="ordertype" value="Take Out" required>
+          <label for="takeout">Take Out</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Food Quality: </label>  
+        <div class="radio">
+          <input id="excellent" type="radio" name="quality" value="Excellent" required>
+          <label for="excellent">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good" type="radio" name="quality" value="Good" required>
+          <label for="good">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average" type="radio" name="quality" value="Average" required>
+          <label for="average">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied" type="radio" name="quality" value="Dissatisfied" required>
+          <label for="dissatisfied">Dissatisfied</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Overall Service Quality: </label>  
+        <div class="radio">
+          <input id="excellent1" type="radio" name="servicequality" value="Excellent" required>
+          <label for="excellent1">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good1" type="radio" name="servicequality" value="Good" required>
+          <label for="good1">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average1" type="radio" name="servicequality" value="Average" required>
+          <label for="average1">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied1" type="radio" name="servicequality" value="Dissatisfied" required>
+          <label for="dissatisfied1">Dissatisfied</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Order Accuracy: </label>  
+        <div class="radio">
+          <input id="excellent2" type="radio" name="accuracy" value="Excellent" required>
+          <label for="excellent2">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good2" type="radio" name="accuracy" value="Good" required>
+          <label for="good2">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average2" type="radio" name="accuracy" value="Average" required>
+          <label for="average2">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied2" type="radio" name="accuracy" value="Dissatisfied" required>
+          <label for="dissatisfied2">Dissatisfied</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Cleanliness: </label>  
+        <div class="radio">
+          <input id="excellent3" type="radio" name="clean" value="Excellent" required>
+          <label for="excellent3">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good3" type="radio" name="clean" value="Good" required>
+          <label for="good3">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average3" type="radio" name="clean" value="Average" required>
+          <label for="average3">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied3" type="radio" name="clean" value="Dissatisfied" required>
+          <label for="dissatisfied3">Dissatisfied</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Speed of Service: </label>  
+        <div class="radio">
+          <input id="excellent4" type="radio" name="service" value="Excellent" required>
+          <label for="excellent4">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good4" type="radio" name="service" value="Good" required>
+          <label for="good4">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average4" type="radio" name="service" value="Average" required>
+          <label for="average4">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied4" type="radio" name="service" value="Dissatisfied" required>
+          <label for="dissatisfied4">Dissatisfied</label>
+        </div>
+      </div> 
+      
+      <div class="form">
+        <label class="food">Overall Experience: </label>  
+        <div class="radio">
+          <input id="excellent5" type="radio" name="experience" value="Excellent" required>
+          <label for="excellent5">Excellent</label>
+        </div>
+        
+        <div class="radio">
+          <input id="good5" type="radio" name="experience" value="Good" required>
+          <label for="good5">Good</label>
+        </div>
+        
+        <div class="radio">
+          <input id="average5" type="radio" name="experience" value="Average" required>
+          <label for="average5">Average</label>
+        </div>
+        
+        <div class="radio">
+          <input id="dissatisfied5" type="radio" name="experience" value="Dissatisfied" required>
+          <label for="dissatisfied5">Dissatisfied</label>
+        </div>
+      </div>
+      
+      <div class="form">
+        <label class="food">Would you recommend our restaurant to your family & friends? </label>  
+        <div class="radio">
+          <input id="yes" type="radio" name="experience" value="Yes" required>
+          <label for="yes">Yes</label>
+        </div>
+        
+        <div class="radio">
+          <input id="no" type="radio" name="experience" value="No" required>
+          <label for="no">No</label>
+        </div>
+        
+        <div class="radio">
+          <input id="notsure" type="radio" name="experience" value="Not Sure" required>
+          <label for="notsure">Not Sure</label>
+        </div>
+      </div class="radio">
+    
+      <div class="form">
+        <label class="food">How did you hear about us?</label>  
+        <div class="radio">
+          <input id="family" type="checkbox" name="hear" value="Family">
+          <label for="family">Family</label>
+        </div>
+
+        <div class="radio">
+          <input id="friends" type="checkbox" name="hear" value="Friends">
+          <label for="friends">Friends</label>
+        </div>
+        
+        <div class="radio">
+          <input id="colleagues" type="checkbox" name="hear" value="Colleagues">
+          <label for="colleagues">Colleagues</label>
+        </div>
+        
+        <div class="radio">
+          <input id="television" type="checkbox" name="hear" value="Television">
+          <label for="television">Television</label>
+        </div>
+        
+        <div class="radio">
+          <input id="browser" type="checkbox" name="hear" value="Web Browser">
+          <label for="browser">Web Browser</label>
+        </div>
+        
+        <div class="radio">
+          <input id="socialmedia" type="checkbox" name="hear" value="Social media">
+          <label for="socialmedia">Social media</label>
+        </div>
+        
+        <div class="radio">
+          <input id="others" type="checkbox" name="hear" value="Others">
+          <label for="others">Others</label>
+        </div>
+    </div>
+      
+    <div class="form">
+        <label for="comment" class="food">Any comments or suggestions for our restaurant?</label>
+        <textarea name="comments" id="comment" cols="30" rows="10" placeholder="Enter your views..."></textarea>
+    </div>
+
+    <div class="form">
+        <button id="submit" value="submit" type="submit">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
