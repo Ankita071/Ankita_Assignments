@@ -1,0 +1,32 @@
+h1 {
+  color: rgb(247, 12, 90);
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  border: 2px solid black;
+  width: fit-content;
+}
+
+table {
+  width: 500px;
+  padding: 10px;
+  text-align: justify;
+  background-color: blueviolet;
+}
+
+#textBox {
+  width: 480px;
+  padding: 10px;
+  font-size: 40px;
+  text-align: end;
+  margin-bottom: 25px;
+}
+
+.buttons {
+   width: 120px;
+   padding: 10px;
+   font-size: 20px;
+   margin-bottom: 25px;
+}

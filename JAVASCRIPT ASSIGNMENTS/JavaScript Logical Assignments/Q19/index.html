@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q19</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="container">
+      <form name="form">
+        <table>
+          <tr class="rows">
+            <td class="columns" colspan="4">
+              <input type="text" name="textBox" id="textBox" class="textBox" readonly/>
+            </td>
+          </tr>
+          <tr class="rows">
+            <td class="columns">
+              <input
+                type="button"
+                value="1"
+                class="buttons"
+                name="a1"
+                onclick="calc(a1.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="2"
+                class="buttons"
+                name="a2"
+                onclick="calc(a2.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="3"
+                class="buttons"
+                name="a3"
+                onclick="calc(a3.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="+"
+                class="buttons"
+                name="add"
+                onclick="calc(add.value)"
+              />
+            </td>
+          </tr>
+
+          <tr class="rows">
+            <td class="columns">
+              <input
+                type="button"
+                value="4"
+                class="buttons"
+                name="a4"
+                onclick="calc(a5.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="5"
+                class="buttons"
+                name="a5"
+                onclick="calc(a5.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="6"
+                class="buttons"
+                name="a6"
+                onclick="calc(a6.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="-"
+                class="buttons"
+                name="sub"
+                onclick="calc(sub.value)"
+              />
+            </td>
+          </tr>
+
+          <tr class="rows">
+            <td class="columns">
+              <input
+                type="button"
+                value="7"
+                class="buttons"
+                name="a7"
+                onclick="calc(a7.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="8"
+                class="buttons"
+                name="a8"
+                onclick="calc(a8.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="9"
+                class="buttons"
+                name="a9"
+                onclick="calc(a9.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="*"
+                class="buttons"
+                name="mul"
+                onclick="calc(mul.value)"
+              />
+            </td>
+          </tr>
+
+          <tr class="rows">
+            <td class="columns">
+              <input
+                type="button"
+                value="CLR"
+                class="buttons"
+                onclick="clr()"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="0"
+                class="buttons"
+                name="a0"
+                onclick="calc(a0.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="="
+                class="buttons"
+                name="a"
+                onclick="textBox.value=eval(textBox.value)"
+              />
+            </td>
+            <td class="columns">
+              <input
+                type="button"
+                value="/"
+                class="buttons"
+                name="div"
+                onclick="calc(div.value)"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
