@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  padding: 10px 10px;
+  width: 98%;
+  margin: 0px 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.rows {
+  border-bottom: 2px solid #f3f3f3;
+  /* text-align: center; */
+  line-height: 50px;
+  display: block;
+  text-align: left;
+}
+
+td {
+  width: 400px;
+  text-align: left;
+}
